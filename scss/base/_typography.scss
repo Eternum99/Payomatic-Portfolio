@@ -1,0 +1,44 @@
+.heading {
+    font-weight: $font-weight-bold;
+    margin: 15px 0;
+    
+    &--1 {
+        font-size: 40px;
+        line-height: 60px;
+
+        @include medium-up {
+            font-size: $font-size-1;
+            line-height: 72px;
+        }
+    }
+
+    &--2 {
+        font-size: $font-size-3;
+        line-height: 48px;
+
+        @include medium-up {
+            font-size: $font-size-2;
+            line-height: 66px;
+        }
+    }
+
+    &--3 {
+        font-size: $font-size-4;
+        line-height: 36px;
+    }
+}
+
+
+.label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: $gray-primary;
+    line-height: 28px;
+    font-weight: $font-weight-semibold;
+
+    @include medium-up {
+        margin-bottom: 10px;
+        font-size: $font-size-base;
+    }
+}

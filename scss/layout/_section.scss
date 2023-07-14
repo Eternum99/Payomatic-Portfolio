@@ -1,0 +1,146 @@
+.showcase {
+    padding-bottom: 43px;
+
+    @include medium-up {
+        padding-bottom: 109px;
+    }
+
+    &__content {
+        & h1 {
+            margin-bottom: 14px;
+
+            @include medium-up {
+                margin-bottom: 20px;
+            }
+        }
+
+        & p {
+            margin-bottom: 29px;
+            @include paragraph-mobile;
+
+            @include medium-up {
+                margin-bottom: 49px;
+                @include paragraph-desktop;
+            }
+        }
+
+        &-buttons {
+            & .btn {
+                font-size: 13px;
+
+                @include medium-up {
+                    font-size: $font-size-5;
+                }
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        margin-top: 14px;
+        // justify-self: center;
+
+        @include medium-up {
+            margin-top: 21px;
+        }
+    }
+
+    & .grid {
+        grid-template-columns: 1fr;
+
+        @include medium-up {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.functions {
+    background-color: $white;
+    padding: 43px 0;
+
+    @include medium-up {
+        padding: 71px 0;
+    }
+
+    & .grid {
+        grid-template-columns: 1fr;
+        gap: 43px;
+        padding-top: 19px;
+
+        @include medium-up {
+            grid-template-columns: repeat(3, 268px);
+            justify-content: space-between;
+            gap: 71px;
+            padding-top: 80px;
+        }
+    }
+
+    &__item {
+        h3 {
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+
+        p {
+            @include paragraph-mobile;
+        }
+    }
+}
+
+.shopping {
+    background-color: $white;
+    padding-top: 43px;
+
+    @include medium-up {
+        padding-top: 71px;
+    }
+
+    & .grid {
+        gap: 34px;
+        grid-template-columns: 1fr;
+
+        @include medium-up {
+            gap: 73px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &:first-child {
+            padding-bottom: 73px;
+
+            @include medium-up {
+                padding-bottom: 158px;
+            }
+        }
+
+        &:last-child {
+            padding-bottom: 73px;
+            border-bottom: 1px solid #C4D1E6;
+
+            @include medium-up {
+                padding-bottom: 158px;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 34px;
+
+        @include medium-up {
+            margin-bottom: 44px;
+        }
+    }
+
+    p {
+        @include paragraph-mobile;
+        margin-bottom: 29px;
+
+        @include medium-up {
+            @include paragraph-desktop;
+            margin-bottom: 49px;
+        }
+    }
+
+}
